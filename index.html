@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChemRefine</title>
+<meta name="description" content="A high-end B2B platform for paint manufacturers and industry professionals to source premium chemical raw materials with transparency and precision.">
+<meta property="og:title" content="ChemRefine">
+<meta property="og:description" content="A high-end B2B platform for paint manufacturers and industry professionals to source premium chemical raw materials with transparency and precision.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://media.base44.com/images/public/6a1a85931c288fc1c4041338/2037520a8_logo.png/v1/fill/w_1200,h_630/2037520a8_logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://media.base44.com/images/public/6a1a85931c288fc1c4041338/2037520a8_logo.png/v1/fit/w_180,h_180/2037520a8_logo.png">
+<link rel="canonical" href="https://magic-pure-chem-flow.base44.app">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="font-inter bg-parchment text-charcoal">
+
+<!-- NAVBAR -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+  <div class="max-w-[1600px] mx-auto pl-0 pr-4 py-3 lg:px-12 lg:py-4 flex items-center justify-between">
+    <a href="#" id="logo" class="flex items-center">
+      <div class="rounded bg-[hsl(var(--background))] mx-0 lg:mx-3 px-8 py-3">
+        <img src="https://media.base44.com/images/public/6a1a85931c288fc1c4041338/54fae1fee_ChatGPT_Image_30__2026__12_47_18_pm.png" alt="Sunchem" class="h-8 w-auto object-contain pb-1 mx-2 pr-2 my-2">
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-10">
+      <button data-nav="#about" class="font-inter text-[13px] font-medium tracking-[0.1em] uppercase text-parchment/60 hover:text-parchment transition-colors duration-200">About</button>
+      <button data-nav="#what-we-do" class="font-inter text-[13px] font-medium tracking-[0.1em] uppercase text-parchment/60 hover:text-parchment transition-colors duration-200">What We Do</button>
+      <button data-nav="#products" class="font-inter text-[13px] font-medium tracking-[0.1em] uppercase text-parchment/60 hover:text-parchment transition-colors duration-200">Products</button>
+      <button data-nav="#clients" class="font-inter text-[13px] font-medium tracking-[0.1em] uppercase text-parchment/60 hover:text-parchment transition-colors duration-200">Clients</button>
+      <button data-nav="#contact" class="font-inter text-[13px] font-medium tracking-[0.1em] uppercase text-parchment/60 hover:text-parchment transition-colors duration-200">Contact Us</button>
+    </nav>
+    <div class="hidden lg:flex items-center gap-4">
+      <button data-nav="#contact" class="font-inter text-[12px] font-semibold tracking-[0.12em] uppercase bg-navy text-parchment px-6 py-3 hover:bg-navy/80 transition-colors duration-300">Request a Quote</button>
+    </div>
+    <button id="menuToggle" aria-label="Toggle menu" class="lg:hidden text-parchment">
+      <span id="iconMenu"><svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="22"
+  height="22"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="4" x2="20" y1="12" y2="12" />
+  <line x1="4" x2="20" y1="6" y2="6" />
+  <line x1="4" x2="20" y1="18" y2="18" />
+</svg></span>
+      <span id="iconClose" class="hidden"><svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="22"
+  height="22"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-black border-t border-parchment/10 px-6 py-8 flex flex-col gap-6">
+    <button data-nav="#about" class="font-inter text-[14px] font-medium tracking-[0.1em] uppercase text-parchment/60 text-left">About</button>
+    <button data-nav="#what-we-do" class="font-inter text-[14px] font-medium tracking-[0.1em] uppercase text-parchment/60 text-left">What We Do</button>
+    <button data-nav="#products" class="font-inter text-[14px] font-medium tracking-[0.1em] uppercase text-parchment/60 text-left">Products</button>
+    <button data-nav="#clients" class="font-inter text-[14px] font-medium tracking-[0.1em] uppercase text-parchment/60 text-left">Clients</button>
+    <button data-nav="#contact" class="font-inter text-[14px] font-medium tracking-[0.1em] uppercase text-parchment/60 text-left">Contact Us</button>
+    <button data-nav="#contact" class="font-inter text-[12px] font-semibold tracking-[0.12em] uppercase bg-navy text-parchment px-6 py-4 text-left">Request a Quote</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="relative min-h-screen flex items-end overflow-hidden bg-black">
+  <div class="absolute inset-0 flex">
+    <div class="w-full lg:w-[55%] ml-auto overflow-hidden">
+      <img id="heroImg" src="https://media.base44.com/images/public/6a1a85931c288fc1c4041338/121e1016b_generated_image.png" alt="Premium chemical raw materials" class="w-full h-full object-cover object-center opacity-70" style="will-change:transform">
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+    </div>
+  </div>
+  <div class="relative z-10 max-w-[1600px] mx-auto px-6 lg:px-12 pb-24 pt-40 w-full">
+    <p class="rv font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-8" data-rv style="--d:0.2s;--t:0.8s;--y:20px;--x:0px">Est. 2013 · Mumbai, India</p>
+    <h1 class="rv font-inter font-black uppercase text-parchment leading-[0.9] tracking-[-0.02em] my-8 text-center" style="font-size:clamp(60px,9vw,160px);--d:.4s;--t:1s;--y:40px" data-rv>
+      Raw<br>Materials.<br><span class="text-parchment/25">Refined</span><br>Excellence.
+    </h1>
+    <p class="rv font-inter text-[15px] font-medium tracking-[0.05em] text-parchment/55 mb-12 max-w-md" data-rv style="--d:0.7s;--t:0.8s;--y:20px;--x:0px">Manufacturer · Distributor · Importer<br>of Premium Paint Raw Materials</p>
+    <div class="rv flex flex-wrap gap-4" data-rv style="--d:0.9s;--t:0.8s;--y:20px;--x:0px">
+      <button data-nav="#products" class="font-inter text-[12px] font-semibold tracking-[0.15em] uppercase bg-parchment text-black px-8 py-4 hover:bg-parchment/80 transition-colors duration-300">Explore Products</button>
+      <button data-nav="#contact" class="font-inter text-[12px] font-semibold tracking-[0.15em] uppercase border border-parchment/50 text-parchment px-8 py-4 hover:bg-parchment hover:text-black transition-all duration-300">Partner With Us</button>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-px bg-parchment/10"></div>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+<section id="about" class="bg-[#0D0D0D] border-t border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+      <div class="grid grid-cols-1 gap-0 divide-y divide-parchment/10">
+        <div class="rv border-t border-parchment/15 pt-8" data-rv style="--d:0s;--t:0.8s;--y:40px;--x:0px">
+          <div class="font-inter font-black text-parchment leading-none mb-3" style="font-size:clamp(56px,7vw,120px)">500+</div>
+          <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Active Clients</p>
+        </div>
+        <div class="rv border-t border-parchment/15 pt-8" data-rv style="--d:0.15s;--t:0.8s;--y:40px;--x:0px">
+          <div class="font-inter font-black text-parchment leading-none mb-3" style="font-size:clamp(56px,7vw,120px)">20+</div>
+          <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Years in Business</p>
+        </div>
+        <div class="rv border-t border-parchment/15 pt-8" data-rv style="--d:0.3s;--t:0.8s;--y:40px;--x:0px">
+          <div class="font-inter font-black text-parchment leading-none mb-3" style="font-size:clamp(56px,7vw,120px)">3</div>
+          <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Business Verticals</p>
+        </div>
+      </div>
+      <div class="rv flex flex-col justify-center" data-rv style="--d:0s;--t:1s;--y:0px;--x:30px">
+        <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-6">Who We Are</p>
+        <h2 class="font-inter font-black uppercase text-parchment leading-[1.0] tracking-[-0.01em] mb-8" style="font-size:clamp(28px,3vw,48px)">The Architecture of<br>Industrial Excellence</h2>
+        <div class="space-y-6 text-parchment/60 font-inter font-normal leading-relaxed">
+          <p>Founded with a singular mission — to elevate the quality of raw materials available to India's paint industry — Sunchem has grown into one of the most trusted names in chemical distribution and manufacturing. Our operations span three distinct verticals: in-house manufacturing, pan-India distribution, and direct import partnerships with global leaders.</p>
+          <p>We are the invisible infrastructure behind India's most recognised paint brands. Every litre of premium coating produced by our clients carries the precision, purity, and consistency that only comes from materials sourced and verified by specialists.</p>
+          <p>ISO-certified processes, a dedicated R&amp;D team, and two decades of deep industry relationships make us the partner of choice for manufacturers who refuse to compromise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-px bg-parchment/10"></div>
+</section>
+
+<!-- WHAT WE DO -->
+<section id="what-we-do" class="bg-black border-b border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="flex items-end justify-between mb-20 border-b border-parchment/10 pb-10">
+      <div>
+        <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-4">Our Capabilities</p>
+        <h2 class="font-inter font-black uppercase text-parchment leading-none tracking-[-0.01em]" style="font-size:clamp(32px,4vw,64px)">What We Do</h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-parchment/10">
+      <div class="rv p-8 lg:p-12 group hover:bg-parchment/5" data-rv style="--d:0s;--t:0.9s;--y:50px;--x:0px">
+        <div class="flex items-start justify-between mb-8">
+          <span class="font-inter font-black text-parchment/10 text-[72px] leading-none">01</span>
+          <svg
+  class="text-parchment/60 mt-3"
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+  <path d="M17 18h1" />
+  <path d="M12 18h1" />
+  <path d="M7 18h1" />
+</svg>
+        </div>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[22px] mb-5">Manufacturing</h3>
+        <p class="font-inter text-parchment/55 leading-relaxed mb-8 text-[15px]">In-house production of premium paint raw materials including resins, pigments, additives, and binders. ISO 9001:2015 certified processes with capacity for bulk and fully custom formulations tailored to specific coating requirements.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Alkyd Resins</span><span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Acrylic Emulsions</span><span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Custom Formulations</span>
+        </div>
+      </div>
+      <div class="rv p-8 lg:p-12 group hover:bg-parchment/5" data-rv style="--d:0.2s;--t:0.9s;--y:50px;--x:0px">
+        <div class="flex items-start justify-between mb-8">
+          <span class="font-inter font-black text-parchment/10 text-[72px] leading-none">02</span>
+          <svg
+  class="text-parchment/60 mt-3"
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+  <path d="M15 18H9" />
+  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+  <circle cx="17" cy="18" r="2" />
+  <circle cx="7" cy="18" r="2" />
+</svg>
+        </div>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[22px] mb-5">Distribution</h3>
+        <p class="font-inter text-parchment/55 leading-relaxed mb-8 text-[15px]">Pan-India and regional distribution network covering 22 states. Authorised distributor for over 15 leading global chemical brands. Fast-turnaround logistics, real-time inventory management, and dedicated account support.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Pan-India Network</span><span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Authorised Distributor</span><span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Fast Logistics</span>
+        </div>
+      </div>
+      <div class="rv p-8 lg:p-12 group hover:bg-parchment/5" data-rv style="--d:0.4s;--t:0.9s;--y:50px;--x:0px">
+        <div class="flex items-start justify-between mb-8">
+          <span class="font-inter font-black text-parchment/10 text-[72px] leading-none">03</span>
+          <svg
+  class="text-parchment/60 mt-3"
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" />
+</svg>
+        </div>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[22px] mb-5">Importing</h3>
+        <p class="font-inter text-parchment/55 leading-relaxed mb-8 text-[15px]">Exclusive import partnerships with European, Asian, and American chemical manufacturers. Direct sourcing of specialty raw materials unavailable domestically — with full regulatory compliance, quality certification, and technical data.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">15+ Source Countries</span><span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Specialty Materials</span><span class="font-inter text-[10px] tracking-[0.12em] uppercase border border-parchment/25 text-parchment/70 px-3 py-1.5">Regulatory Compliance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPAL AGENCIES -->
+<section class="bg-[#0D0D0D] border-b border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="border-b border-parchment/10 pb-10 mb-16">
+      <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-4">Our Network</p>
+      <h2 class="font-inter font-black uppercase text-parchment leading-none tracking-[-0.01em]" style="font-size:clamp(32px,4vw,64px)">Our Principal Agencies</h2>
+    </div>
+    <div class="space-y-16">
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+          <span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Resins &amp; Binders</span>
+          <div class="flex-1 h-px bg-parchment/10"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Pidilite</span></div>
+            <div class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5 space-y-1.5"><span class="block">Acrylic emulsion binders for interior and exterior paints.</span><span class="block">Styrene-acrylic binders for suitable paint formulations.</span><span class="block">Vinyl-acrylic or other economical binders for selected applications.</span><span class="block">Specialised resins for primers, putty-related systems or industrial coatings, where applicable.</span></div>
+            
+          </div>
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0.07s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Soham Polymers</span></div>
+            <p class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5">Pure acrylic emulsions; VAM-acrylic emulsions; architectural paint binders; metal-coating binders; wood-coating binders; construction and cement-compatible binders; textile and pigment-printing binders; carpet binders; specialty acrylic binders</p>
+            
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+          <span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Pigments</span>
+          <div class="flex-1 h-px bg-parchment/10"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Meghmani Pigments</span></div>
+            <div class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5 space-y-1.5"><span class="block">Phthalocyanine pigments (Blue and Green)</span><span class="block">Azo pigments (Yellow, Red and Orange)</span><span class="block">High-performance pigments (Violet 23, Violet 19 and Red 122)</span><span class="block">Titanium dioxide (Anatase and Rutile grades)</span></div>
+            
+          </div>
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0.07s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Nigtas</span></div>
+            <div class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5 space-y-1.5"><span class="block">Calcium carbonate (natural and processed grades)</span><span class="block">Standard and specialty calcium carbonate for paints and coatings</span><span class="block">Coated and uncoated calcium carbonate</span></div>
+            
+          </div>
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0.14s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Ashahi Tennants Pigments</span></div>
+            <div class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5 space-y-1.5"><span class="block">Azo Yellow pigments</span><span class="block">Azo Red pigments</span><span class="block">Azo Orange pigments</span></div>
+            
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+          <span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Additives &amp; Solvents</span>
+          <div class="flex-1 h-px bg-parchment/10"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Tiny chempro Chemicals</span></div>
+            <div class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5 space-y-1.5"><span class="block">Defoamers and antifoams</span><span class="block">Wetting agents</span><span class="block">Dispersing agents</span><span class="block">Wax emulsions</span><span class="block">Silicone emulsions</span><span class="block">Corrosion inhibitors</span><span class="block">Mould-release agents</span><span class="block">Specialty foam-control additives</span></div>
+            
+          </div>
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0.07s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Pidilite</span></div>
+            <div class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5 space-y-1.5"><span class="block">Paint and coating chemicals</span><span class="block">Industrial resins</span><span class="block">Specialty adhesives and sealants</span><span class="block">Textile chemicals and auxiliaries</span><span class="block">Wetting and coating-related specialty chemicals</span><span class="block">Construction chemical additives</span><span class="block">Specialty coating and maintenance chemicals</span></div>
+            
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+          <span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Specialty Chemicals</span>
+          <div class="flex-1 h-px bg-parchment/10"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Manufacturing of all kinds of pigment paste</span></div>
+            
+            
+          </div>
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0.07s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Carbon Black Pigment Paste – Gelling & Non-gelling</span></div>
+            
+            
+          </div>
+          <div class="rv border border-parchment/10 p-6 hover:border-parchment/40 hover:-translate-y-1 group bg-[#0D0D0D]" data-rv style="--d:0.14s;--t:0.7s;--y:30px;--x:0px">
+            <div class="w-full min-h-14 flex items-center justify-start mb-5"><span class="font-inter font-black text-parchment text-[17px] tracking-[-0.01em] uppercase">Important Products</span></div>
+            <p class="font-inter text-parchment/50 text-[13px] leading-relaxed mb-5">Nigtas – CaCO₃<br>Blanc fixe – China</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="bg-black border-b border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="border-b border-parchment/10 pb-10 mb-0">
+      <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-4">Our Portfolio</p>
+      <h2 class="font-inter font-black uppercase text-parchment leading-none tracking-[-0.01em]" style="font-size:clamp(32px,4vw,64px)">Products</h2>
+    </div>
+    <div class="flex gap-0 border-b border-parchment/10 mb-14 overflow-x-auto" id="tabs">
+      <button data-tab="Manufacturing" class="tab font-inter font-bold uppercase tracking-[0.08em] text-[13px] px-8 py-5 border-b-2 transition-all duration-300 border-parchment text-parchment">Manufacturing</button>
+      <button data-tab="Distribution" class="tab font-inter font-bold uppercase tracking-[0.08em] text-[13px] px-8 py-5 border-b-2 transition-all duration-300 border-transparent text-parchment/30 hover:text-parchment/60">Distribution</button>
+      <button data-tab="Import" class="tab font-inter font-bold uppercase tracking-[0.08em] text-[13px] px-8 py-5 border-b-2 transition-all duration-300 border-transparent text-parchment/30 hover:text-parchment/60">Import</button>
+    </div>
+    <div class="panel active" data-panel="Manufacturing">
+      <div class="">
+        <div class="flex items-center gap-4 mb-8"><span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Manufacturing of Pigment Pastes</span><div class="flex-1 h-px bg-parchment/10"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">All kinds of pigment pastes</h3>
+              
+            </div>
+            <p class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6">Water-based pigment pastes, solvent-based pigment pastes, organic pigment pastes, inorganic pigment pastes, fluorescent pigment pastes, oxide pigment pastes and pearl pigment pastes.</p>
+            <button data-enquire="All kinds of pigment pastes" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Carbon Black Pigment Paste — Gelling</h3>
+              
+            </div>
+            <p class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6">Carbon black paste formulated to develop a gel-like or highly structured consistency under specified conditions.</p>
+            <button data-enquire="Carbon Black Pigment Paste — Gelling" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Carbon Black Pigment Paste — Non-gelling</h3>
+              
+            </div>
+            <p class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6">Carbon black paste formulated to maintain better flow and avoid unwanted gel formation during storage and application.</p>
+            <button data-enquire="Carbon Black Pigment Paste — Non-gelling" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel hidden" data-panel="Distribution">
+      <div class="">
+        <div class="flex items-center gap-4 mb-8"><span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Resins &amp; Binders</span><div class="flex-1 h-px bg-parchment/10"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Pidilite</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Acrylic emulsion binders for interior and exterior paints.</span><span class="block">Styrene-acrylic binders for suitable paint formulations.</span><span class="block">Vinyl-acrylic or other economical binders for selected applications.</span><span class="block">Specialised resins for primers, putty-related systems or industrial coatings, where applicable.</span></div>
+            <button data-enquire="Pidilite" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Soham Polymers</h3>
+              
+            </div>
+            <p class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6">Pure acrylic emulsions; VAM-acrylic emulsions; architectural paint binders; metal-coating binders; wood-coating binders; construction and cement-compatible binders; textile and pigment-printing binders; carpet binders; specialty acrylic binders</p>
+            <button data-enquire="Soham Polymers" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-14">
+        <div class="flex items-center gap-4 mb-8"><span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Pigments</span><div class="flex-1 h-px bg-parchment/10"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Meghmani Pigments</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Phthalocyanine pigments (Blue and Green)</span><span class="block">Azo pigments (Yellow, Red and Orange)</span><span class="block">High-performance pigments (Violet 23, Violet 19 and Red 122)</span><span class="block">Titanium dioxide (Anatase and Rutile grades)</span></div>
+            <button data-enquire="Meghmani Pigments" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Nigtas</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Calcium carbonate (natural and processed grades)</span><span class="block">Standard and specialty calcium carbonate for paints and coatings</span><span class="block">Coated and uncoated calcium carbonate</span></div>
+            <button data-enquire="Nigtas" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Ashahi Tennants Pigments</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Azo Yellow pigments</span><span class="block">Azo Red pigments</span><span class="block">Azo Orange pigments</span></div>
+            <button data-enquire="Ashahi Tennants Pigments" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-14">
+        <div class="flex items-center gap-4 mb-8"><span class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/45">Additives &amp; Solvents</span><div class="flex-1 h-px bg-parchment/10"></div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Tiny chempro Chemicals</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Defoamers and antifoams</span><span class="block">Wetting agents</span><span class="block">Dispersing agents</span><span class="block">Wax emulsions</span><span class="block">Silicone emulsions</span><span class="block">Corrosion inhibitors</span><span class="block">Mould-release agents</span><span class="block">Specialty foam-control additives</span></div>
+            <button data-enquire="Tiny chempro Chemicals" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Pidilite</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Paint and coating chemicals</span><span class="block">Industrial resins</span><span class="block">Specialty adhesives and sealants</span><span class="block">Textile chemicals and auxiliaries</span><span class="block">Wetting and coating-related specialty chemicals</span><span class="block">Construction chemical additives</span><span class="block">Specialty coating and maintenance chemicals</span></div>
+            <button data-enquire="Pidilite" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel hidden" data-panel="Import">
+      <div class="">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Niğtaş – CaCO₃ (Calcium Carbonate)</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Natural calcium carbonate (calcite)</span><span class="block">Micronised calcium carbonate</span><span class="block">Coated calcium carbonate</span><span class="block">Uncoated calcium carbonate</span><span class="block">Specialty and high-whiteness calcium carbonate grades</span></div>
+            <button data-enquire="Niğtaş – CaCO₃ (Calcium Carbonate)" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+          <div class="pcard border border-parchment/10 p-6 group hover:border-parchment/40 hover:-translate-y-1 transition-all duration-500 bg-black cursor-default">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="font-inter font-bold text-parchment text-[18px] tracking-[-0.01em]">Blanc Fixe – China</h3>
+              
+            </div>
+            <div class="font-inter text-parchment/50 text-[14px] leading-relaxed mb-6 space-y-1.5"><span class="block">Synthetic (precipitated) barium sulphate (BaSO₄)</span><span class="block">Natural barium sulphate (barytes)</span><span class="block">Fine-particle and high-purity barium sulphate grades</span><span class="block">Specialty barium sulphate for paints, coatings, plastics and inks</span></div>
+            <button data-enquire="Blanc Fixe – China" class="flex items-center gap-2 font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/70 font-semibold hover:text-parchment hover:gap-3 transition-all duration-300">Enquire <svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="13"
+  height="13"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" class="bg-[#0D0D0D] border-b border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="border-b border-parchment/10 pb-10 mb-16">
+      <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-4">Our Clients</p>
+      <h2 class="font-inter font-black uppercase text-parchment leading-none tracking-[-0.01em] mb-4" style="font-size:clamp(32px,4vw,64px)">Trusted By<br>Industry Leaders</h2>
+      <p class="font-inter text-parchment/50 text-[15px]">Over 500 customers across India and Southeast Asia</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-parchment/5 mb-0">
+      <div class="rv bg-[#0D0D0D] flex items-center justify-center py-10 px-6 group hover:bg-[#1A1A1A]" style="--d:0.00s;--t:.5s;--y:0px" data-rv>
+        <span class="font-inter font-bold text-parchment text-[14px] tracking-[0.05em] uppercase text-center opacity-50 group-hover:opacity-100 transition-opacity duration-300">Nerolac</span>
+      </div>
+      <div class="rv bg-[#0D0D0D] flex items-center justify-center py-10 px-6 group hover:bg-[#1A1A1A]" style="--d:0.05s;--t:.5s;--y:0px" data-rv>
+        <span class="font-inter font-bold text-parchment text-[14px] tracking-[0.05em] uppercase text-center opacity-50 group-hover:opacity-100 transition-opacity duration-300">Global Paint</span>
+      </div>
+      <div class="rv bg-[#0D0D0D] flex items-center justify-center py-10 px-6 group hover:bg-[#1A1A1A]" style="--d:0.10s;--t:.5s;--y:0px" data-rv>
+        <span class="font-inter font-bold text-parchment text-[14px] tracking-[0.05em] uppercase text-center opacity-50 group-hover:opacity-100 transition-opacity duration-300">Paras Paint</span>
+      </div>
+      <div class="rv bg-[#0D0D0D] flex items-center justify-center py-10 px-6 group hover:bg-[#1A1A1A]" style="--d:0.15s;--t:.5s;--y:0px" data-rv>
+        <span class="font-inter font-bold text-parchment text-[14px] tracking-[0.05em] uppercase text-center opacity-50 group-hover:opacity-100 transition-opacity duration-300">Nippon Paint</span>
+      </div>
+      <div class="rv bg-[#0D0D0D] flex items-center justify-center py-10 px-6 group hover:bg-[#1A1A1A]" style="--d:0.20s;--t:.5s;--y:0px" data-rv>
+        <span class="font-inter font-bold text-parchment text-[14px] tracking-[0.05em] uppercase text-center opacity-50 group-hover:opacity-100 transition-opacity duration-300">Jotun India</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 border-t border-parchment/10 mt-0">
+      <div class="rv py-12 px-8 border-r last:border-r-0 border-parchment/10 text-center" data-rv style="--d:0.5s;--t:0.7s;--y:20px;--x:0px">
+        <div class="font-inter font-black text-parchment leading-none mb-2" style="font-size:clamp(36px,4vw,64px)">500+</div>
+        <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Clients</p>
+      </div>
+      <div class="rv py-12 px-8 border-r last:border-r-0 border-parchment/10 text-center" data-rv style="--d:0.6s;--t:0.7s;--y:20px;--x:0px">
+        <div class="font-inter font-black text-parchment leading-none mb-2" style="font-size:clamp(36px,4vw,64px)">20+</div>
+        <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Years</p>
+      </div>
+      <div class="rv py-12 px-8 border-r last:border-r-0 border-parchment/10 text-center" data-rv style="--d:0.7s;--t:0.7s;--y:20px;--x:0px">
+        <div class="font-inter font-black text-parchment leading-none mb-2" style="font-size:clamp(36px,4vw,64px)">15+</div>
+        <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Countries Sourced From</p>
+      </div>
+      <div class="rv py-12 px-8 border-r last:border-r-0 border-parchment/10 text-center" data-rv style="--d:0.8s;--t:0.7s;--y:20px;--x:0px">
+        <div class="font-inter font-black text-parchment leading-none mb-2" style="font-size:clamp(36px,4vw,64px)">3</div>
+        <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40">Business Verticals</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PARTNER -->
+<section class="bg-navy border-t border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="border-b border-parchment/20 pb-10 mb-20">
+      <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-4">The Case for Partnership</p>
+      <h2 class="font-inter font-black uppercase text-parchment leading-none tracking-[-0.01em]" style="font-size:clamp(32px,4vw,64px)">Why Partner With Us</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-parchment/10">
+      <div class="rv p-10 group" data-rv style="--d:0s;--t:0.9s;--y:40px;--x:0px">
+        <svg
+  class="text-parchment/60 mb-8 group-hover:text-parchment transition-colors duration-300"
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="m9 12 2 2 4-4" />
+</svg>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[18px] mb-4">Quality Assurance</h3>
+        <p class="font-inter text-parchment/50 text-[14px] leading-relaxed">Every batch is tested against international standards before dispatch. ISO 9001:2015 certified processes with full traceability from source to delivery.</p>
+      </div>
+      <div class="rv p-10 group" data-rv style="--d:0.15s;--t:0.9s;--y:40px;--x:0px">
+        <svg
+  class="text-parchment/60 mb-8 group-hover:text-parchment transition-colors duration-300"
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" />
+</svg>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[18px] mb-4">Global Sourcing Network</h3>
+        <p class="font-inter text-parchment/50 text-[14px] leading-relaxed">Direct relationships with over 30 manufacturers across 15 countries. Exclusive agency rights for premium brands unavailable elsewhere in the region.</p>
+      </div>
+      <div class="rv p-10 group" data-rv style="--d:0.3s;--t:0.9s;--y:40px;--x:0px">
+        <svg
+  class="text-parchment/60 mb-8 group-hover:text-parchment transition-colors duration-300"
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" />
+  <path d="M6.453 15h11.094" />
+  <path d="M8.5 2h7" />
+</svg>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[18px] mb-4">Technical Expertise</h3>
+        <p class="font-inter text-parchment/50 text-[14px] leading-relaxed">In-house R&D team with formulation expertise across waterborne, solventborne, and UV-cure systems. Technical support from initial specification to production.</p>
+      </div>
+      <div class="rv p-10 group" data-rv style="--d:0.44999999999999996s;--t:0.9s;--y:40px;--x:0px">
+        <svg
+  class="text-parchment/60 mb-8 group-hover:text-parchment transition-colors duration-300"
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+  <path d="M15 18H9" />
+  <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+  <circle cx="17" cy="18" r="2" />
+  <circle cx="7" cy="18" r="2" />
+</svg>
+        <h3 class="font-inter font-bold uppercase text-parchment tracking-[0.05em] text-[18px] mb-4">Reliable Logistics</h3>
+        <p class="font-inter text-parchment/50 text-[14px] leading-relaxed">Strategically positioned warehouses across India. Dedicated fleet and third-party logistics partnerships ensuring on-time delivery regardless of order size.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-black border-t border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-24 lg:py-36">
+    <div class="border-b border-parchment/10 pb-10 mb-16">
+      <p class="font-inter text-[10px] tracking-[0.3em] uppercase text-parchment/40 mb-4">Get In Touch</p>
+      <h2 class="font-inter font-black uppercase text-parchment leading-none tracking-[-0.01em]" style="font-size:clamp(32px,4vw,64px)">Request a Quote</h2>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+      <div>
+        <p class="font-inter text-parchment/55 text-[15px] leading-relaxed mb-12 max-w-sm">Speak with our technical sales team. We'll respond within 24 hours with pricing, technical data, and availability.</p>
+        <div class="space-y-8">
+          <div class="flex items-start gap-4"><svg
+  class="text-parchment/50 mt-0.5 flex-shrink-0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+  <circle cx="12" cy="10" r="3" />
+</svg><div><p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40 mb-1">Address</p><p class="font-inter text-parchment/75 text-[15px]">102, B-22, Shantinagar, Sector-1,<br>Mira Road (E), Thane-401107.<br>Maharashtra, India</p></div></div>
+          <div class="flex items-start gap-4"><svg
+  class="text-parchment/50 mt-0.5 flex-shrink-0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+</svg><div><p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40 mb-1">Phone</p><p class="font-inter text-parchment/75 text-[15px]">+91 22 48016417 / 9082977624</p></div></div>
+          <div class="flex items-start gap-4"><svg
+  class="text-parchment/50 mt-0.5 flex-shrink-0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="20" height="16" x="2" y="4" rx="2" />
+  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+</svg><div><p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40 mb-1">Email</p><p class="font-inter text-parchment/75 text-[15px]">sales@sunchem.co.in</p></div></div>
+        </div>
+        <div class="mt-16 border-t border-parchment/10 pt-10">
+          <p class="font-inter text-[11px] tracking-[0.2em] uppercase text-parchment/40 mb-3">Office Hours</p>
+          <p class="font-inter text-parchment/65 text-[14px]">Monday – Saturday, 9:00 AM – 6:00 PM IST</p>
+        </div>
+      </div>
+      <div>
+        <div id="thanks" class="hidden flex-col items-start gap-6 pt-8">
+          <svg
+  class="text-parchment"
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="m9 12 2 2 4-4" />
+</svg>
+          <div>
+            <h3 class="font-inter font-bold text-parchment text-[24px] mb-2">Enquiry Received</h3>
+            <p class="font-inter text-parchment/55 text-[15px] max-w-sm">Thank you for your interest. Our team will review your requirements and respond within one business day.</p>
+          </div>
+          <button id="again" class="font-inter text-[12px] tracking-[0.15em] uppercase text-parchment border-b border-parchment/40 pb-0.5 hover:opacity-60 transition-opacity">Submit Another Enquiry</button>
+        </div>
+        <form id="form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label class="font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/45 block mb-2" for="company_name">Company Name *</label><input id="company_name" name="company_name" required class="w-full bg-transparent border-b border-parchment/20 focus:border-parchment py-3 font-inter text-[15px] text-parchment outline-none transition-colors duration-200 placeholder:text-parchment/20" placeholder="e.g. Asian Paints Ltd."></div>
+            <div><label class="font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/45 block mb-2" for="contact_person">Contact Person *</label><input id="contact_person" name="contact_person" required class="w-full bg-transparent border-b border-parchment/20 focus:border-parchment py-3 font-inter text-[15px] text-parchment outline-none transition-colors duration-200 placeholder:text-parchment/20" placeholder="Your full name"></div>
+          </div>
+          <div><label class="font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/45 block mb-2" for="email">Email Address *</label><input id="email" name="email" type="email" required class="w-full bg-transparent border-b border-parchment/20 focus:border-parchment py-3 font-inter text-[15px] text-parchment outline-none transition-colors duration-200 placeholder:text-parchment/20" placeholder="procurement@company.com"></div>
+          <div><label class="font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/45 block mb-2" for="product_interest">Product Interest *</label>
+            <select id="product_interest" name="product_interest" required class="w-full bg-black border-b border-parchment/20 focus:border-parchment py-3 font-inter text-[15px] text-parchment outline-none transition-colors duration-200 rounded-none">
+              <option value="">Select a product</option>
+              <option value="All kinds of pigment pastes" class="bg-black">All kinds of pigment pastes</option>
+              <option value="Carbon Black Pigment Paste — Gelling" class="bg-black">Carbon Black Pigment Paste — Gelling</option>
+              <option value="Carbon Black Pigment Paste — Non-gelling" class="bg-black">Carbon Black Pigment Paste — Non-gelling</option>
+              <option value="Pidilite" class="bg-black">Pidilite</option>
+              <option value="Soham Polymers" class="bg-black">Soham Polymers</option>
+              <option value="Meghmani Pigments" class="bg-black">Meghmani Pigments</option>
+              <option value="Nigtas" class="bg-black">Nigtas</option>
+              <option value="Ashahi Tennants Pigments" class="bg-black">Ashahi Tennants Pigments</option>
+              <option value="Tiny chempro Chemicals" class="bg-black">Tiny chempro Chemicals</option>
+              <option value="Niğtaş – CaCO₃ (Calcium Carbonate)" class="bg-black">Niğtaş – CaCO₃ (Calcium Carbonate)</option>
+              <option value="Blanc Fixe – China" class="bg-black">Blanc Fixe – China</option>
+              <option value="Other" class="bg-black">Other</option>
+            </select></div>
+          <div><label class="font-inter text-[11px] tracking-[0.15em] uppercase text-parchment/45 block mb-2" for="message">Message</label><textarea id="message" name="message" rows="4" class="w-full bg-transparent border-b border-parchment/20 focus:border-parchment py-3 font-inter text-[15px] text-parchment outline-none transition-colors duration-200 placeholder:text-parchment/20 resize-none" placeholder="Describe your requirements — grade, quantity, application..."></textarea></div>
+          <button id="submitBtn" type="submit" class="font-inter text-[12px] font-semibold tracking-[0.15em] uppercase bg-parchment text-black px-10 py-4 hover:bg-parchment/80 disabled:opacity-50 transition-colors duration-300 mt-4">Submit Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy border-t border-parchment/10">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 mb-16">
+      <div>
+        <div class="bg-white inline-block rounded px-3 py-2 mb-5"><img src="https://media.base44.com/images/public/6a1a85931c288fc1c4041338/f1372accd_ChatGPTImage30202612_47_18pm.png" alt="Sunchem" class="h-9 w-auto object-contain"></div>
+        <p class="font-inter text-parchment/45 text-[14px] leading-relaxed max-w-xs">Manufacturer · Distributor · Importer of Premium Paint Raw Materials. Building the infrastructure of India's coating industry since 2013.</p>
+      </div>
+      <div>
+        <p class="font-inter text-[10px] tracking-[0.25em] uppercase text-parchment/35 mb-6">Quick Links</p>
+        <div class="grid grid-cols-2 gap-3">
+          <button data-nav="#about" class="font-inter text-[13px] text-parchment/50 hover:text-parchment text-left transition-colors duration-200">About</button>
+          <button data-nav="#what-we-do" class="font-inter text-[13px] text-parchment/50 hover:text-parchment text-left transition-colors duration-200">What We Do</button>
+          <button data-nav="#products" class="font-inter text-[13px] text-parchment/50 hover:text-parchment text-left transition-colors duration-200">Products</button>
+          <button data-nav="#agencies" class="font-inter text-[13px] text-parchment/50 hover:text-parchment text-left transition-colors duration-200">Our Agencies</button>
+          <button data-nav="#clients" class="font-inter text-[13px] text-parchment/50 hover:text-parchment text-left transition-colors duration-200">Clients</button>
+          <button data-nav="#contact" class="font-inter text-[13px] text-parchment/50 hover:text-parchment text-left transition-colors duration-200">Contact</button>
+        </div>
+      </div>
+      <div>
+        <p class="font-inter text-[10px] tracking-[0.25em] uppercase text-parchment/35 mb-6">Connect</p>
+        <p class="font-inter text-parchment/50 text-[13px] mb-2">sales@sunchem.co.in</p>
+        <p class="font-inter text-parchment/50 text-[13px] mb-8">+91 22 48016417 / 9082977624</p>
+        <div class="flex gap-4">
+          <button aria-label="linkedin" class="w-9 h-9 border border-parchment/20 flex items-center justify-center text-parchment/50 hover:text-parchment hover:border-parchment/50 transition-all duration-200"><svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="15"
+  height="15"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+  <rect width="4" height="12" x="2" y="9" />
+  <circle cx="4" cy="4" r="2" />
+</svg></button>
+          <button aria-label="twitter" class="w-9 h-9 border border-parchment/20 flex items-center justify-center text-parchment/50 hover:text-parchment hover:border-parchment/50 transition-all duration-200"><svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="15"
+  height="15"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+</svg></button>
+          <button aria-label="mail" class="w-9 h-9 border border-parchment/20 flex items-center justify-center text-parchment/50 hover:text-parchment hover:border-parchment/50 transition-all duration-200"><svg
+  class=""
+  xmlns="http://www.w3.org/2000/svg"
+  width="15"
+  height="15"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="20" height="16" x="2" y="4" rx="2" />
+  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+</svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-parchment/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <p class="font-inter text-[11px] tracking-[0.1em] text-parchment/30 uppercase">© 2013 Sunchem Pvt. Ltd. All rights reserved.</p>
+      <p class="font-inter text-[11px] tracking-[0.1em] text-parchment/20 uppercase">Mumbai, India</p>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

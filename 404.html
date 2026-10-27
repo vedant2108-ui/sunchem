@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChemRefine</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;border:0 solid #e5e7eb}
+body{font-family:'Inter',sans-serif;font-size:17px;line-height:1.6;background:#f8fafc}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1.5rem}
+.box{max-width:28rem;width:100%;text-align:center}
+h1{font-size:4.5rem;line-height:1;font-weight:300;color:#cbd5e1}
+.bar{height:2px;width:4rem;background:#e2e8f0;margin:.5rem auto 1.5rem}
+h2{font-size:1.5rem;line-height:2rem;font-weight:500;color:#1e293b;margin-bottom:.75rem}
+p{color:#475569;line-height:1.625}
+p span{font-weight:500;color:#334155}
+.btn{display:inline-flex;align-items:center;margin-top:1.5rem;padding:.5rem 1rem;font:500 .875rem/1.25rem 'Inter',sans-serif;color:#334155;background:#fff;border:1px solid #e2e8f0;border-radius:.5rem;cursor:pointer;transition:background-color .2s,border-color .2s}
+.btn:hover{background:#f8fafc;border-color:#cbd5e1}
+.btn svg{width:1rem;height:1rem;margin-right:.5rem}
+</style>
+</head>
+<body>
+<div class="page"><div class="box">
+  <h1>404</h1><div class="bar"></div>
+  <h2>Page Not Found</h2>
+  <p>The page <span>"<b id="name" style="font-weight:500"></b>"</span> could not be found in this application.</p>
+  <button class="btn" id="home">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+    Go Home
+  </button>
+</div></div>
+<script>
+  // Works at a domain root and under a GitHub Pages project path (/Yadav/).
+  var seg = location.pathname.split('/')[1];
+  var base = location.hostname.slice(-10) === 'github.io' && seg ? '/' + seg + '/' : '/';
+  document.getElementById('name').textContent = location.pathname.slice(base.length);
+  document.getElementById('home').onclick = function () { location.href = base; };
+</script>
+</body>
+</html>
